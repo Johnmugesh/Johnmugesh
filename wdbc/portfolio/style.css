@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&family=Tilt+Neon&display=swap');
+.navbar-custom {
+  background: #00b0e5e5;
+}
+.nav-link:hover {
+    background: #fff;
+    color: chocolate !important;
+    border-radius: 5px;
+}
+.nav-link,
+.navbar-brand {
+  color:#fff !important;
+}
+.active {
+    color: rgb(0, 0, 255) !important;
+}
+.joh {
+    min-height: 100vh;
+    background-image: url("hi.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    font-family: 'Tilt Neon', 'cursive';
+    color: #fff;
+}
