@@ -1,0 +1,27 @@
+import logo from './logo.svg';
+import './App.css';
+import { useEffect, useState } from 'react';
+function Form (){
+  const [name, setName] = useState('')
+  const [age, setAge] = useState(null)
+  const onNameChange = (e) => {setName(e.target.value)}
+  const onAgeChange = (e) => {setAge(e.target.value)}
+  const onSubmit = () => {
+    console.log("Nmae: " + name);
+    console.log("Age: " + age);
+  } 
+
+return(<div>
+      Name:<input type='text' onChange={onNameChange}></input><br/>
+      Age:<input type='number' onChange={onAgeChange}></input><br/>
+      <button onClick={onsubmit }>Submit</button>
+  </div>);
+}
+function App(){
+  return <Form />;
+}
+
+
+export default App;
+
+
