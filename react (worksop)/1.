@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const myName = 'John';
-  const updatedAt = Date.now();
+  const updatedAt = Date.now()
   return (
     <div>
       <span>Name: {myName}</span><br/>
