@@ -1,0 +1,30 @@
+import logo from './logo.svg';
+import './App.css';
+import { useEffect, useState } from 'react';
+
+function App(props){
+  let [count, setCount] = useState(100);
+  let [name,setName] = useState("John");
+  useEffect(function(){
+    console.log('useEffect called');
+    if(count % 2 == 0){
+      setName('John is even');
+    }
+    else{
+      setName('John is odd');
+  }
+  },[count]);
+ 
+  return(<div>
+    <div onClick={() => setCount(count+1)}>click here to increase count</div>
+    <div>Counter: {count}</div>
+    <div>My Name: {name}</div>
+  </div>);
+}
+
+
+
+
+export default App;
+
+
