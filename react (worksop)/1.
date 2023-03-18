@@ -1,1 +1,18 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  const myName = 'John';
+  const updatedAt = Date.now()
+  return (
+    <div>
+      <span>Name: {myName}</span><br/>
+      <span>updaetd: {updatedAt}</span>
+    </div>
+    
+  );
+}
+
+
+export default App;
 
